@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharePay - Split Bill</title>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f8f9fa; margin: 0; padding: 0; }
+        .container { max-width: 450px; margin: 0 auto; background: #fff; min-height: 100vh; padding: 20px; box-sizing: border-box; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .header h1 { color: #ffb300; margin: 0; font-size: 26px; }
+        .balance-box { display: flex; gap: 10px; margin-bottom: 20px; }
+        .box { flex: 1; padding: 15px; border-radius: 8px; text-align: center; color: white; font-weight: bold; }
+        .box-give { background-color: #4caf50; }
+        .box-take { background-color: #ff5722; }
+        .main-btn { display: block; width: 100%; background: #ffb300; color: #fff; text-align: center; padding: 15px; border: none; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; text-transform: uppercase; margin-bottom: 20px; }
+        .section-title { font-size: 14px; color: #666; font-weight: bold; margin-bottom: 10px; }
+        .bill-item { display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #fdfdfd; border: 1px solid #eee; border-radius: 6px; margin-bottom: 10px; }
+        .bill-info p { margin: 0; font-size: 15px; font-weight: bold; }
+        .bill-info span { font-size: 12px; color: #999; }
+        .bill-amount { text-align: right; font-weight: bold; color: #ff5722; }
+        .btn-action { background: #333; color: white; border: none; padding: 5px 10px; border-radius: 4px; font-size: 12px; cursor: pointer; margin-top: 5px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>SharePay 💸</h1>
+        <p style="color:#777; margin:5px 0 0 0;">Patungan anti-canggung buat mahasiswa</p>
+    </div>
+    
+    <div class="balance-box">
+        <div class="box box-give"><span style="font-size:11px;">KAMU DITAGIH</span><br>Rp 45.000</div>
+        <div class="box box-take"><span style="font-size:11px;">KAMU MENAGIH</span><br>Rp 120.000</div>
+    </div>
+
+    <button class="main-btn">📸 Hitung Split Bill Baru</button>
+    
+    <div class="section-title">PATUNGAN AKTIF BELUM LUNAS</div>
+    <div class="pantry-list">
+        <div class="bill-item">
+            <div class="bill-info">
+                <p>Nasi Goreng & Es Teh (Warmindo)</p>
+                <span>Patungan bersama: Jaw, Bal</span>
+            </div>
+            <div class="bill-amount">
+                Rp 35.000<br>
+                <button class="btn-action">Tagih via WA</button>
+            </div>
+        </div>
+        <div class="bill-item">
+            <div class="bill-info">
+                <p>Patungan Wifi Kos Juni</p>
+                <span>Grup: Anak Kos Kamar 5</span>
+            </div>
+            <div class="bill-amount" style="color:#4caf50;">
+                Rp 50.000<br>
+                <button class="btn-action" style="background:#4caf50;">Bayar Ke Bib</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
